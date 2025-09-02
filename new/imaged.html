@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property</title>
+    <style>
+        .container {
+            height: 600px;
+            border: 2px solid black;
+            position: relative; /* Important for positioning child elements */
+        }
+        img {
+            height: 150px;
+            width: 150px;
+            position: absolute; /* So we can place them in different positions */
+        }
+        /* Positioning each image */
+        .first {
+            top: 10px;
+            left: 10px;
+        }
+        .second {
+            top: 10px;
+            right: 10px;
+        }
+        .third {
+            bottom: 10px;
+            left: 10px;
+        }
+        .fourth {
+            bottom: 10px;
+            right: 10px;
+        } 
+        .fifth {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Property</h1>
+    <div class="container">
+        <img src="image1.jpg" alt="first" class="first" />
+        <img src="image2.jpg" alt="second" class="second" />
+        <img src="image3.jpg" alt="third" class="third" />
+        <img src="image4.jpg" alt="fourth" class="fourth" />
+        <img src="image5.jpg" alt="fifth" class="fifth" />
+    </div>
+</body>
+</html>

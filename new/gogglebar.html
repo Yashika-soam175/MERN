@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Search Bar Clone</title>
+  <style>
+    body {
+      background-color: #fff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .search-container {
+      width: 100%;
+      max-width: 600px;
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      padding: 10px 20px;
+      box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+      transition: box-shadow 0.2s ease-in-out;
+    }
+
+    .search-box:focus-within {
+      box-shadow: 0 1px 6px rgba(32,33,36,0.5);
+    }
+    .search-box input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+    }
+    .search-box button {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      padding: 8px 16px;
+      margin-left: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .search-box button:hover {
+      border: 1px solid #dadce0;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <form class="search-box" action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="Search Google or type a URL" />
+      <button type="submit">Google Search</button>
+    </form>
+  </div>
+</body>
+</html>
